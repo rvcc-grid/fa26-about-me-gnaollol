@@ -67,3 +67,19 @@ img {
     font-size: 25px;
     color: white;
 }
+
+#images {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#images figure {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#images img {
+    max-width:100%;
+}
