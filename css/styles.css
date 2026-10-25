@@ -3,6 +3,11 @@ body {
     background-color: #1f1c1d;
 }
 
+h1{
+    text-align: center;
+    color:white;
+}
+
 footer {
     font-family: "Outfit",system-ui,sans-serif;
     text-align: center;
@@ -31,13 +36,29 @@ footer {
     object-fit: cover;
 }
 
-h1 {
-    font-family: "Outfit",system-ui,sans-serif;
+#hobbies{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
     color: white;
     text-align: center;
     font-weight: 600;
-    font-variant: small-caps;
     font-size: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+    padding: 0 1rem;
+    font-family: sans-serif;
+    color:white;
+}
+
+#hobbies ul {
+    margin: 0;
 }
 
 h2 {
@@ -45,6 +66,7 @@ h2 {
     text-align: center;
     font-size: 30px;
     color: white;
+    margin: 0.5rem0;
 }
 
 #bio {
@@ -103,4 +125,24 @@ img {
 #lit div p{
     font-size: 25px;
     font-weight: 300;
+}
+
+@media screen and (min-width: 60em){
+    figure {
+        display: grid; 
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
+    }
 }
