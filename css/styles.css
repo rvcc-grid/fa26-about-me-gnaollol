@@ -128,10 +128,35 @@ img {
     font-weight: 300;
 }
 
+#video figure{
+    display: block; 
+    max-width: 50rem;
+    margin: 0 auto 2rem auto;
+    padding: 0 1rem;
+    aspect-ratio: auto;
+}
+
+#video iframe{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border: 2px solid white;
+}
+
+#video figcaption{
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 30px;
+    font-weight: 400;
+}
+
 @media screen and (min-width: 60em){
     figure {
         display: grid; 
         grid-template-columns: 2fr 1fr;
+        margin: 2rem;
     }
 
     figcaption {
