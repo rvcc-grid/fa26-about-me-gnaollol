@@ -197,3 +197,81 @@ img {
         display:block;
     }
 }
+
+/* Contact Form */
+#contact{
+    border: 2px solid white;
+    color: white; 
+    padding: 1rem;
+    margin: 1rem 0;
+
+}
+
+#contact form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#contact fieldset {
+    background-color: #353032;
+    border: 1px solid white;
+    padding: 1rem;
+    min-width: 0;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea{
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+#contact textarea{
+    resize: vertical;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0;
+}
+
+#contact li{
+    margin-bottom: 0.5rem;
+}
+
+#contact li label{
+    display: inline;
+}
+
+#contact button {
+    background-color: white;
+    color: #1f1c1d;
+    border: none;
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Thank you page */
+#thanks{
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#thanks a{
+    color: white;
+}
+
