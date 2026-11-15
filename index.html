@@ -99,8 +99,55 @@
                 <figcaption> Video showcase of midterm website! </figcaption>
             </figure>
         </section>
+        <section id="contact">
+        <h2> Contact</h2>
+        <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="67c7987c-c521-48f6-aa23-9a31e0e58323">
+            <input type="hidden" name="subject" value="New message from my About Me page">
+            <input type="hidden" name="redirect" value="https://github.com/rvcc-grid/fa26-about-me-gnaollol">
+            <fieldset>
+                <legend> Contact Form </legend>
+                <p>
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="phone"> Phone: </label>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label for="message"> Message: </label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </p>
+
+                <fieldset>
+                    <Legend> Would you like a follow up? </Legend>
+                    <ul>
+                        <li>
+                            <input type="radio" id="followup-yes" name="followup" value="yes">
+                            <label for="followup-yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="followup-no" name="followup" value="no">
+                            <label for="followup-no">No</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div data-class="h-captcha" data-captcha="true"></div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+        </section>
         </main>
         <footer> ©2026 Gian Lardizabal </footer>
-    
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     </body>
 </html>
