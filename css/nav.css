@@ -1,0 +1,109 @@
+/* make scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*
+ get rid of padding & sizing on body so
+ header is at top
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* add some padding back to rest of page */
+main {
+    padding: 0.5rem;
+}
+
+footer {
+    margin: 0 0.5rem 0.5rem;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #353032;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo img {
+    width: 3rem;
+    height: auto;
+    margin: 0;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* navigation list */
+.navbar-links {
+    width: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*
+ style all a tags in header
+ and then on hover
+*/
+header .nav-links {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #353032;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header .nav-links:hover,
+header .nav-links:focus-visible {
+    filter: invert(1);
+}
+
+header .nav-links:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+/*
+media query for non-mobile nav bar
+min-width set to width of nav elements
+such that no text wraps
+*/
+@media screen and (min-width: 60rem) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        width: auto;
+    }
+
+    .navbar-links ul {
+        flex-direction: row;
+    }
+
+}
